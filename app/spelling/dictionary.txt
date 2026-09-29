@@ -1,0 +1,27 @@
+# School/subject custom dictionary (one term per line, case-insensitive).
+# Lines starting with '#' and blank lines are ignored.
+# This file is intentionally NOT complete; extend it per subject.
+#
+# Base vocabulary (IT paper + common school terms):
+CPU
+RAM
+ROM
+ICT
+BPO
+QWERTY
+MS
+Word
+cybersecurity
+computer
+keyboard
+operating
+system
+email
+internet
+# Legitimate English/domain terms missing from the base word list
+# (observed in the sample paper; verified as correct, not misspellings):
+nearshore
+# Keyboard-row key sequences (all-caps in papers, longer than the
+# abbreviation rule, genuine IT touch-typing terms):
+qwertyuiop
+zxcvbnm
