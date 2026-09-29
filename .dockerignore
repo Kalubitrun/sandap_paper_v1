@@ -1,0 +1,40 @@
+# Git / VCS
+.git
+.gitignore
+.github
+
+# Node
+node_modules
+web/node_modules
+web/.next
+web/out
+*.log
+npm-debug.log*
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.venv
+venv
+.env
+.pytest_cache
+.mypy_cache
+
+# App runtime artifacts (regenerated; service uses temp dirs)
+output
+input
+*.log
+.env
+.env.*
+
+# Tests (not needed in the production image)
+tests
+
+# Dev / docs artifacts (kept out of the image; Dockerfile itself must stay
+# in context so `docker build .` can locate it)
+README.md
+web/README.md
+web/AGENTS.md
+web/CLAUDE.md

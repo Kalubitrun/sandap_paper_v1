@@ -1,5 +1,8 @@
-const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
+// Relative by default: the browser talks to Next.js on the same origin,
+// which proxies /api/* to FastAPI internally. For local development
+// against a separately-hosted backend, set NEXT_PUBLIC_API_URL
+// (e.g. http://127.0.0.1:8000).
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? "";
 
 export const EXAMINATIONS = [
   "PT 1",

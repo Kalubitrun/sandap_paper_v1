@@ -28,6 +28,9 @@ DOCX_MEDIA_TYPE = (
 app = FastAPI(title="Question Paper Formatter API")
 app.add_middleware(
     CORSMiddleware,
+    # Production browsers reach FastAPI through the same-origin Next.js
+    # proxy, so no broad CORS is needed. These localhost origins exist
+    # only for local `next dev` workflows; never use allow_origins=["*"].
     allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
